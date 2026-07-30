@@ -10,7 +10,7 @@
 ![Deploy](https://img.shields.io/github/actions/workflow/status/OstrakMC/ostrak-docs/deploy.yml?branch=main&label=deploy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[Сайт](https://docs.ostrak.benovich.cc) · [Плагин](https://github.com/OstrakMC/Ostrak)
+[Сайт](https://docs.ostrak.benovich.cc)
 
 </div>
 
