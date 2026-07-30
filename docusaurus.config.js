@@ -11,8 +11,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://ostrakmc.github.io',
-  baseUrl: '/ostrak-docs/',
+  url: 'https://docs.ostrak.benovich.cc',
+  baseUrl: '/',
 
   organizationName: 'OstrakMC',
   projectName: 'ostrak-docs',
