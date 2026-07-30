@@ -23,7 +23,11 @@ const config = {
 
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru'],
+    locales: ['ru', 'en'],
+    localeConfigs: {
+      ru: {label: 'Русский'},
+      en: {label: 'English'},
+    },
   },
 
   presets: [
@@ -74,6 +78,10 @@ const config = {
           {
             href: 'https://github.com/OstrakMC',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],

@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Ostrak",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Ostrak",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Документация": {
+    "message": "Documentation",
+    "description": "Navbar item with label Документация"
+  },
+  "item.label.Modrinth": {
+    "message": "Modrinth",
+    "description": "Navbar item with label Modrinth"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
