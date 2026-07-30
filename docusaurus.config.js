@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Ostrak',
   tagline: 'Цифровые документы и идентификация для RP-серверов Minecraft',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-32.png',
 
   future: {
     v4: true,
@@ -47,13 +47,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/ostrak-icon-512.png',
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: '◆ Ostrak',
+        title: 'Ostrak',
+        logo: {
+          alt: 'Ostrak',
+          src: 'img/logo.png',
+        },
         items: [
           {
             type: 'docSidebar',

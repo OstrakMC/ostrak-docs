@@ -1,6 +1,7 @@
 /**
  * Брендовая палитра Ostrak — та же, что и в самих сообщениях плагина
- * (Messages.java: градиент префикса #38BDF8 → #818CF8 → #C084FC).
+ * (Messages.java: градиент префикса #38BDF8 → #818CF8 → #C084FC, семантика
+ * success/warning/danger/info).
  */
 :root {
   --ifm-color-primary: #4f46e5;
@@ -10,7 +11,14 @@
   --ifm-color-primary-light: #6366f1;
   --ifm-color-primary-lighter: #818cf8;
   --ifm-color-primary-lightest: #a5b4fc;
+
+  --ifm-color-success: #34d399;
+  --ifm-color-info: #38bdf8;
+  --ifm-color-warning: #fbbf24;
+  --ifm-color-danger: #f87171;
+
   --ifm-code-font-size: 95%;
+  --ifm-code-border-radius: 6px;
   --ostrak-gradient: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -26,11 +34,54 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.hero--primary {
-  background: var(--ostrak-gradient);
+/* Навбар — тонкая градиентная полоса снизу, как в чате у плагина. */
+.navbar {
+  border-bottom: 3px solid transparent;
+  border-image: var(--ostrak-gradient) 1;
 }
 
+.navbar__logo {
+  border-radius: 6px;
+}
+
+/* Заголовки H1 в градиенте — фирменный акцент. */
 .markdown h1 {
+  background: var(--ostrak-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Левый бордер у H2 в цвет primary — визуально отбивает разделы страницы. */
+.markdown h2 {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 0.6rem;
+}
+
+/* Шапка таблиц — лёгкий градиентный подсвет вместо голого серого. */
+table thead tr {
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.12), rgba(192, 132, 252, 0.12));
+}
+
+table code {
+  white-space: nowrap;
+}
+
+/* Ссылки внутри текста — подчёркивание появляется на ховере, а не всегда. */
+.markdown a {
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.15s ease;
+}
+.markdown a:hover {
+  text-decoration-color: currentColor;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #0b1120;
+}
+
+.footer__title {
   background: var(--ostrak-gradient);
   background-clip: text;
   -webkit-background-clip: text;
